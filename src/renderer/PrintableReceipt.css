@@ -1,0 +1,333 @@
+/* General Receipt Wrapper */
+.receipt-wrapper {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.btn-print {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.2s;
+}
+
+.btn-print:hover {
+  background: #229954;
+}
+
+.receipt-placeholder {
+  padding: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+/* A4 Receipt Container */
+.receipt-container {
+  width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  background: white;
+  margin: 0 auto;
+  padding: 20mm;
+  box-sizing: border-box;
+  border: 2px solid #000; /* Simple black border as requested */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+/* Header */
+.receipt-header {
+  text-align: center;
+  border-bottom: 3px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.receipt-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.receipt-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.receipt-meta p {
+  margin: 5px 0;
+}
+
+/* Sections */
+.receipt-section {
+  margin-bottom: 25px;
+}
+
+.receipt-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
+
+/* Tables */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+}
+
+.info-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.info-table tr:last-child {
+  border-bottom: none;
+}
+
+.info-table td {
+  padding: 10px 8px;
+  vertical-align: top;
+}
+
+.info-table .label {
+  width: 40%;
+  font-weight: 600;
+  color: #000;
+}
+
+.info-table .value {
+  width: 60%;
+  color: #000;
+}
+
+/* Special Notes Section */
+.notes-section {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.notes-section h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.notes-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px;
+  background: white;
+  border-left: 4px solid #3498db;
+}
+
+/* Charges Table */
+.charges-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+  border: 1px solid #000;
+}
+
+.charges-table thead {
+  background: #000;
+  color: white;
+}
+
+.charges-table th {
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.charges-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.charges-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.charges-table td {
+  padding: 10px;
+  color: #000;
+}
+
+.charges-table .subtotal-row {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.charges-table .subtotal-row td {
+  padding: 12px 10px;
+  border-top: 2px solid #000;
+}
+
+/* Grand Total Section */
+.grand-total-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.total-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grand-total-row {
+  background: #000;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.grand-total-row td {
+  padding: 15px 12px;
+  text-align: right;
+}
+
+.grand-total-row td:first-child {
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* Payment Summary Rows */
+.balance-due-row {
+  background: #ffe6e6;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.balance-due-row td {
+  padding: 14px 10px;
+  border-top: 2px solid #c0392b;
+}
+
+.balance-paid-row {
+  background: #e6ffe6;
+  font-size: 20px;
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.balance-paid-row td {
+  padding: 14px 10px;
+  border-top: 2px solid #27ae60;
+}
+
+/* Footer */
+.receipt-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #000;
+  text-align: center;
+}
+
+.receipt-footer p {
+  font-size: 17px;
+  margin: 8px 0;
+  color: #000;
+}
+
+.footer-note {
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.signature-box {
+  text-align: center;
+  width: 40%;
+}
+
+.signature-line {
+  height: 2px;
+  background: #000;
+  margin-bottom: 8px;
+}
+
+.signature-box p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+/* Print Styles */
+@media print {
+  /* Hide everything except the receipt */
+  body * {
+    visibility: hidden;
+  }
+
+  .receipt-container,
+  .receipt-container * {
+    visibility: visible;
+  }
+
+  .receipt-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 15mm;
+    border: none; /* Remove border when printing for cleaner look */
+  }
+
+  /* Hide the print button */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Ensure black text on white background */
+  .receipt-container {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Force table borders to print */
+  .charges-table,
+  .charges-table th,
+  .charges-table td {
+    border: 1px solid #000 !important;
+  }
+
+  /* Prevent page breaks inside important sections */
+  .receipt-section,
+  .charges-table {
+    page-break-inside: avoid;
+  }
+
+  /* Ensure proper page size */
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+}
